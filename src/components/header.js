@@ -4,14 +4,14 @@ const Header = (title, date, temp) => {
 
   const header = document.createElement('div')
   const articleDate = document.createElement('span')
-  const articleTitle = document.createAttribute('h1')
-  const todayTemp = document.createAttribute('span')
+  const articleTitle = document.createElement('h1')
+  const todayTemp = document.createElement('span')
 
   // Add classes
 
   header.classList.add('header');
   articleDate.classList.add('date');
-  // todayTemp.classList.add('temp');
+  todayTemp.classList.add('temp');
 
   // Add Text Content
 
