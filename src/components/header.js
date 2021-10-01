@@ -24,8 +24,8 @@ const Header = (title, date, temp) => {
   header.appendChild(articleDate)
   header.appendChild(articleTitle)
   header.appendChild(todayTemp)
-
-  console.log(header);
+  
+  // console.log(header);
   return header;
 
   // TASK 1
