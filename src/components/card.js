@@ -42,13 +42,11 @@ const Card = (article) => {
   author.appendChild(authorName)
 
   card.addEventListener("click", event => {
-    console.log(headLine)
+    console.log(`${article.headline}`)
   })
-  // console.log(card)
+  
   return card;
 }
-
-
 const cardAppender = (selector) => {
   // TASK 6
   // ---------------------
@@ -60,14 +58,11 @@ const cardAppender = (selector) => {
   //
   axios.get('http://localhost:5000/api/articles')
   .then(resp => {
-    console.log(resp.data.articles)
-    
     const realData = resp.data.articles
     for (const subject in realData) {
       for (let i=0; i < realData[subject].length; i++) {
         const newCard = Card(realData[subject][i])
         document.querySelector(selector).appendChild(newCard)
-        console.log(newCard)
       }
     }
     
