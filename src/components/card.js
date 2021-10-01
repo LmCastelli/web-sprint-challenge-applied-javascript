@@ -17,6 +17,9 @@ const Card = (article) => {
   //   </div>
   // </div>
   //
+
+  const card = document.createElement('div')
+  
 }
 
 const cardAppender = (selector) => {
